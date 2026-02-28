@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Baloo 2', cursive;
+    scroll-behavior: smooth;
+}
+
+/* General page style */
+.page {
+    width: 100%;
+    height: 100vh; /* full screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Individual page backgrounds */
+.page1 {
+    background-image: url('img/BG.png');
+    position: relative;
+
+}
+/* Optional: text styling */
+.page1 h2{ /*This one for the intro text*/
+    font-size: 8rem;
+    font-family: 'Baloo 2', cursive;
+    padding: 15px 30px;
+    border-radius: 10px;
+      font-weight: bold; 
+}
+
+
+
+
+.page2 {
+    background-image: url('img/cloth.png');
+     position: relative; 
+
+}
+.page2 .paper-img {
+   position: absolute;
+    top: 0;        /* top of page2 */
+    left: 0;       /* stick to left side */
+    width: 50%;    /* half of the screen */
+    height: 90%;  /* fill page height */
+    object-fit: cover; /* prevents stretching */
+    z-index: 2;
+    margin-top: 3%;
+    margin-bottom:3%;
+    margin-left: 3%;
+    
+}
+
+.page2 .photo-img{
+    position: absolute;
+    top: 3%;
+    right: 0;
+    width: 55%;
+    height: 90%;
+    object-fit: cover;
+    z-index: 2;
+}
+
+/* photo follows the frame */
+.page2 .trisha-img{
+    position: absolute;
+    top: 13%;
+    right:12%;
+    width: 33%;
+    height: 60%;
+    object-fit: cover;
+    z-index: 1;
+}
+.page .info h3{
+     position:absolute;
+    font-size:3rem;
+    font-weight:700;
+    margin-top: 6%;
+      top: 15%;
+     left:7%;
+     transform: translateY(-50%);
+     width:40%;
+     text-align:left;
+     color:black;
+     z-index:3;
+}
+.page .info p{
+     position:absolute;
+     font-size: 1.5rem;;
+     top:35%;
+     left:7%;
+     transform: traslateY(-50%);
+     width:40%;
+     text-align:left;
+     color:black;
+     z-index:3;
+      font-weight: bold;
+}
+
+.page3 {
+    background-image: url('img/greenbgg.png');
+     position: relative;  
+}
+
+.page3 .greenbg h4{
+     position: relative;   
+     font-size: 2rem;
+    font-family: 'Baloo 2', cursive;
+    padding: 15px 30px;
+    border-radius: 10px;
+      font-weight: bold; 
+      font-weight: 800;
+      color: black;
+      z-index:3;
+}
+
+
+
+.page3 h1{
+
+    position: absolute;
+    top: 33px; /* distance from top */
+    left: 50%; /* center horizontally */
+    transform: translateX(-50%);
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: center;
+    width: aut;
+    color: rgb(0, 0, 0);
+    z-index: 2;
+
+}
+
+
+.page3 .paperbg-img{
+     position: absolute;   /* put it behind text */
+    top: 10%;
+    left: 10%;
+    width: auto;           /* half of page width */
+    height: 58%;
+    object-fit: cover;
+    z-index: 1;           /* behind headings and text */
+    transform: rotate(90deg);
+}
+
+
+.page3 .paperbg2-img{
+     position: absolute;   /* put it behind text */
+    top: 10%;
+    right: 38%;
+    width: auto;           /* half of page width */
+    height: 58%;
+    object-fit: cover;
+    z-index: 1;           /* behind headings and text */
+    transform: rotate(90deg);
+}
+
+
+.page3 .paperbg3-img{
+     position: absolute;   /* put it behind text */
+    top: 45%;
+    left: 10%;
+    width: auto;           /* half of page width */
+    height: 58%;
+    object-fit: cover;
+    z-index: 1;           /* behind headings and text */
+    transform: rotate(90deg);
+}
+
+
+
+.page3 .paperbg4-img{
+     position: absolute;   /* put it behind text */
+    top: 45%;
+    right: 38%;
+    width: auto;           /* half of page width */
+    height: 58%;
+    object-fit: cover;
+    z-index: 1;           /* behind headings and text */
+    transform: rotate(90deg);
+}
+
+.page3 .paperribbon-img{
+    position: absolute;   /* put it behind text */
+    top: 20%;
+    right: 7%;
+    width: 23%;           /* half of page width */
+    height: 74%;
+    object-fit: cover;
+    z-index: 2;           /* behind headings and text */
+    
+
+}
+      
+
+
+/* text on page 3 */
+
+
+.swim{
+     position: absolute;       /* layer above the image */
+    top: 38%;                 /* adjust vertical position */
+    left: 19%;                /* adjust horizontal position */
+    transform: translate(-50%, -50%); /* center text exactly */
+    z-index: 2;               /* above image (image is z-index: 1) */
+    text-align: center;
+    width: 80%; 
+}
+
+.swim h2{
+
+       font-size: 2.5rem;
+    font-family: 'Baloo 2', cursive;
+    padding: 15px 30px;
+    border-radius: 10px;
+      font-weight: bold; 
+      color: rgb(2, 2, 2);
+      z-index: 3;
+      margin-bottom: -2%;
+}
+
+.swim p{
+    font-size: 1.3rem;
+    font-family: 'Baloo 2', cursive;
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin-top: 0%;
+      font-weight: bold; 
+      color: black;
+      z-index: 3;
+}
+
+.read{
+ position: absolute;       /* layer above the image */
+    top: 73%;                 /* adjust vertical position */
+    left: 19%;                /* adjust horizontal position */
+    transform: translate(-50%, -50%); /* center text exactly */
+    z-index: 2;               /* above image (image is z-index: 1) */
+    text-align: center;
+    width: 80%; 
+}
+.read h2{
+       font-size: 2.5rem;
+    font-family: 'Baloo 2', cursive;
+    padding: 19px 30px;
+    border-radius: 10px;
+      font-weight: bold; 
+      color: rgb(0, 0, 0);
+      z-index: 3;
+      margin-bottom: -2%;
+}
+.read p{
+    font-size: 1.3rem;
+    font-family: 'Baloo 2', cursive;
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin-top: 0%;
+     font-weight: bold; 
+      color: black;
+      z-index: 3;
+}   
+
+
+.scroll{
+      position: absolute;       /* layer above the image */
+    top: 38%;                 /* adjust vertical position */
+    right: -33%;                /* adjust horizontal position */
+    transform: translate(-50%, -50%); /* center text exactly */
+    z-index: 2;               /* above image (image is z-index: 1) */
+    text-align: center;
+    width: 80%; 
+
+}
+.scroll h2{
+       font-size: 2.3rem;
+    font-family: 'Baloo 2', cursive;
+    padding: 19px 30px;
+    border-radius: 10px;
+      font-weight: bold; 
+      color: rgb(0, 0, 0);
+      z-index: 3;
+      margin-bottom: -2%;
+}
+
+.scroll p{
+    font-size: 1.1rem;
+    font-family: 'Baloo 2', cursive;
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin-top: 0%;
+     font-weight: bold; 
+      color: black;
+      z-index: 3;
+ }
+
+
+
+.bike{
+ position: absolute;       /* layer above the image */
+    top: 68%;                 /* adjust vertical position */
+    right: -33%;                /* adjust horizontal position */
+    transform: translate(-50%, -50%); /* center text exactly */
+    z-index: 2;               /* above image (image is z-index: 1) */
+    text-align: center;
+    width: 80%; 
+}
+.bike h2{
+       font-size: 2.4rem;
+    font-family:      'Baloo 2', cursive ;
+    padding: 19px 30px;
+    border-radius: 10px;
+      font-weight: bold; 
+      color: rgb(0, 0, 0);
+      z-index: 3;
+      margin-bottom: -2%;
+}
+.bike p{
+    font-size: 1.2rem;
+    font-family:        'Baloo 2', cursive;
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin-top: 0%;
+     font-weight: bold; 
+      color: black;
+      z-index: 3;
+ }  
+.facts {
+    position: absolute;
+    top: 55%;
+    left: 80%;                    /* horizontal position */
+    transform: translate(-50%, -50%);
+    z-index: 2;
+   
+    width: 250px;                 /* fixed width keeps them stacked neatly */
+}
+
+.facts h1 {
+    font-size: 1.8rem;
+    top:-15%;
+    left:60%;
+    white-space: nowrap;
+    font-family: 'Baloo 2', cursive;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin-top: 30%;           /* top 0, bottom 5px spacing */
+    padding: 0;                  /* remove padding that could push ul aside */
+}
+
+.facts ul {
+    font-size: 1rem;           /* readable size */
+    font-family: 'Baloo 2', cursive;
+    text-align: left;
+    padding-left: 20px;          /* proper indent for bullets */
+    margin-top:20%;                   /* remove extra margins */
+    font-weight: bold;
+    color: black;
+    list-style-type: disc;       /* ensures bullets appear */
+
+/* Optional: smooth full-page snapping */
+}
+
+
+
+
+.page4 {
+    background-image: url('img/bgpage4.png');
+     position: relative; 
+     height:830px;
+     width: 1530px;
+     
+}
+.page4 h1{
+      position: absolute;
+    top: 33px; /* distance from top */
+    left: 50%; /* center horizontally */
+    transform: translateX(-50%);
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: center;
+    width: aut;
+    color: rgb(0, 0, 0);
+    z-index: 2;
+
+}
+.page4 .frame1-img{
+    position: absolute;
+    top: 24%;
+    left: 5%;
+    width: 30%;
+    height: 60%;
+    object-fit: cover;
+    z-index: 2;
+      transform: rotateY(180deg);
+}
+
+.page4 .pic1-img{
+   position: absolute;
+    top: 32%;       /* match frame1 */
+    left: 10%;       /* match frame1 */
+    width: 20%;     /* same as frame1 */
+    height: 48%;    /* same as frame1 */
+    object-fit: cover;
+    z-index: 3;     /* on top of frame1 */
+}
+
+.page4 .frame2-img{
+    position: absolute;
+    top: 24%;
+    left: 36%;  /* center frame */
+    width: 30%;
+    height: 60%;
+    object-fit: cover;
+    z-index: 2;
+}
+
+
+.page4 .pic2-img{
+   position: absolute;
+    top: 32%;       /* match frame1 */
+    left: 41%;       /* match frame1 */
+    width: 20%;     /* same as frame1 */
+    height: 48%;    /* same as frame1 */
+    object-fit: cover;
+    z-index: 3;     /* on top of frame1 */
+}
+
+.page4 .frame3-img{
+    position: absolute;
+    top: 24%;
+    left: 67%;  /* rightmost frame */
+    width: 30%;
+    height: 60%;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.page4 .pic3-img{
+   position: absolute;
+    top: 32%;       /* match frame1 */
+    left: 72%;       /* match frame1 */
+    width: 20%;     /* same as frame1 */
+    height: 48%;    /* same as frame1 */
+    object-fit: cover;
+    z-index: 3;     /* on top of frame1 */
+}
+
+
+
+
+.page5 {
+    background-image: url('img/greenbg5.jpg');
+     position: relative; 
+      height:830px;
+     width: 1530px;
+   
+}
+
+.page5 h1{
+      position: absolute;
+    top: 33px; /* distance from top */
+    left: 50%; /* center horizontally */
+    transform: translateX(-50%);
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: center;
+    width: aut;
+    color: rgb(0, 0, 0);
+    z-index: 2;
+
+}
+.diary-container{
+  display: flex;
+  justify-content: space-between;
+   gap: 30px; 
+  margin: 80px;
+}
+
+.diary-box{
+    margin-top: 70px;
+  width: 250%;
+  min-height: 520px;
+  background: #d1deb5;
+  border: 3px solid #333;
+  padding: 100px;
+  font-family: monospace;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+}
+
+.page h3{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: rgb(29, 27, 27);
+}
+
+.page5 .diary-box p{
+    font-size: 1rem;
+    line-height: 1;
+    color: black;
+    font-weight: bold;
+}
+.btn-back {
+    position: fixed;       /* fixed so it stays on screen */
+    top: 20px;             /* distance from top */
+    left: 20px;            /* distance from left */
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #8aadd3; 
+    color: white;          /* ensures visibility */
+    font-weight: bold;
+    border-radius: 25px;       
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 1000;         /* ensures it’s above everything */
+    transition: background-color 0.3s ease; 
+}
+
+.btn-back:hover {
+    background-color: #354922;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.2);
+}
+html {
+    scroll-snap-type: y mandatory;
+}
+
+.page {
+    scroll-snap-align: start;
+}
