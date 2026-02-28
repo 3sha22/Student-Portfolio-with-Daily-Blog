@@ -36,7 +36,7 @@ html, body {
 /* Optional: text styling */
 .page1 h2{ /*This one for the intro text*/
     font-size: 8rem;
-    font-family: monospace;
+    font-family: 'Baloo 2', cursive;
     padding: 15px 30px;
     border-radius: 10px;
       font-weight: bold; 
@@ -118,7 +118,7 @@ html, body {
 .page3 .greenbg h4{
      position: relative;   
      font-size: 2rem;
-    font-family: monospace;
+    font-family: 'Baloo 2', cursive;
     padding: 15px 30px;
     border-radius: 10px;
       font-weight: bold; 
@@ -223,18 +223,18 @@ html, body {
 .swim h2{
 
        font-size: 2.5rem;
-    font-family: monospace;
+    font-family: 'Baloo 2', cursive;
     padding: 15px 30px;
     border-radius: 10px;
       font-weight: bold; 
-      color: rgb(225, 36, 36);
+      color: rgb(2, 2, 2);
       z-index: 3;
       margin-bottom: -2%;
 }
 
 .swim p{
     font-size: 1.3rem;
-    font-family: monospace;
+    font-family: 'Baloo 2', cursive;
     padding: 15px 30px;
     border-radius: 10px;
     margin-top: 0%;
@@ -254,17 +254,17 @@ html, body {
 }
 .read h2{
        font-size: 2.5rem;
-    font-family: monospace;
+    font-family: 'Baloo 2', cursive;
     padding: 19px 30px;
     border-radius: 10px;
       font-weight: bold; 
-      color: rgb(225, 36, 36);
+      color: rgb(0, 0, 0);
       z-index: 3;
       margin-bottom: -2%;
 }
 .read p{
     font-size: 1.3rem;
-    font-family: monospace;
+    font-family: 'Baloo 2', cursive;
     padding: 15px 30px;
     border-radius: 10px;
     margin-top: 0%;
@@ -286,18 +286,18 @@ html, body {
 }
 .scroll h2{
        font-size: 2.3rem;
-    font-family: monospace;
+    font-family: 'Baloo 2', cursive;
     padding: 19px 30px;
     border-radius: 10px;
       font-weight: bold; 
-      color: rgb(225, 36, 36);
+      color: rgb(0, 0, 0);
       z-index: 3;
       margin-bottom: -2%;
 }
 
 .scroll p{
     font-size: 1.1rem;
-    font-family: monospace;
+    font-family: 'Baloo 2', cursive;
     padding: 15px 30px;
     border-radius: 10px;
     margin-top: 0%;
@@ -319,17 +319,17 @@ html, body {
 }
 .bike h2{
        font-size: 2.4rem;
-    font-family: monospace;
+    font-family:      'Baloo 2', cursive ;
     padding: 19px 30px;
     border-radius: 10px;
       font-weight: bold; 
-      color: rgb(225, 36, 36);
+      color: rgb(0, 0, 0);
       z-index: 3;
       margin-bottom: -2%;
 }
 .bike p{
     font-size: 1.2rem;
-    font-family: monospace;
+    font-family:        'Baloo 2', cursive;
     padding: 15px 30px;
     border-radius: 10px;
     margin-top: 0%;
@@ -349,22 +349,22 @@ html, body {
 
 .facts h1 {
     font-size: 1.8rem;
-    top:-45%;
+    top:-15%;
     left:60%;
     white-space: nowrap;
-    font-family: monospace;
+    font-family: 'Baloo 2', cursive;
     font-weight: bold;
-    color: rgb(225, 36, 36);
+    color: rgb(0, 0, 0);
     margin-top: 30%;           /* top 0, bottom 5px spacing */
     padding: 0;                  /* remove padding that could push ul aside */
 }
 
 .facts ul {
-    font-size: 0.9rem;           /* readable size */
-    font-family: monospace;
+    font-size: 1rem;           /* readable size */
+    font-family: 'Baloo 2', cursive;
     text-align: left;
     padding-left: 20px;          /* proper indent for bullets */
-    margin-top:0;                   /* remove extra margins */
+    margin-top:20%;                   /* remove extra margins */
     font-weight: bold;
     color: black;
     list-style-type: disc;       /* ensures bullets appear */
@@ -455,6 +455,62 @@ html, body {
     height: 48%;    /* same as frame1 */
     object-fit: cover;
     z-index: 3;     /* on top of frame1 */
+}
+
+
+
+
+.page5 {
+    background-image: url('images/greenbg5.jpg');
+     position: relative; 
+      height:830px;
+     width: 1530px;
+   
+}
+
+.page5 h1{
+      position: absolute;
+    top: 33px; /* distance from top */
+    left: 50%; /* center horizontally */
+    transform: translateX(-50%);
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: center;
+    width: aut;
+    color: rgb(0, 0, 0);
+    z-index: 2;
+
+}
+.diary-container{
+  display: flex;
+  justify-content: space-between;
+   gap: 30px; 
+  margin: 80px;
+}
+
+.diary-box{
+    margin-top: 70px;
+  width: 250%;
+  min-height: 520px;
+  background: #d1deb5;
+  border: 3px solid #333;
+  padding: 100px;
+  font-family: monospace;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+}
+
+.page h3{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: rgb(29, 27, 27);
+}
+
+.page5 .diary-box p{
+    font-size: 1rem;
+    line-height: 1;
+    color: black;
+    font-weight: bold;
 }
 
 
